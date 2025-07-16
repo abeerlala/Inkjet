@@ -1,3 +1,22 @@
+document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.carouselRight',
+            prevEl: '.carouselLeft',
+        },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        speed: 1500
+    });
+});
+
 fetch("/Components/nav.html")
     .then(res => res.text())
     .then(data => { document.getElementById("nav").innerHTML = data; })
@@ -37,4 +56,49 @@ document.addEventListener("scroll", () => {
 toTop.addEventListener("click", (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+
+
+
+const bgLayers = document.querySelectorAll('.mainSection .bgLayer');
+const leftBtn = document.getElementById("mainImgLeft");
+const rightBtn = document.getElementById("mainImgRight");
+let currentBg = 0;
+let intervalId;
+
+bgLayers[currentBg].classList.add('active');
+
+function updateActiveSlide(newIndex) {
+    bgLayers.forEach(layer => layer.classList.remove('active'));
+    currentBg = newIndex;
+    bgLayers[currentBg].classList.add('active');
+}
+
+function startAutoSlide() {
+    clearInterval(intervalId);
+    intervalId = setInterval(() => {
+        updateActiveSlide((currentBg + 1) % bgLayers.length);
+    }, 10000);
+}
+
+startAutoSlide();
+
+rightBtn.addEventListener("click", () => {
+    if (currentBg < bgLayers.length - 1) {
+        updateActiveSlide(currentBg + 1);
+        startAutoSlide();
+    } else if (currentBg = 4) {
+        updateActiveSlide(0);
+        startAutoSlide();
+    }
+});
+
+leftBtn.addEventListener("click", () => {
+    if (currentBg > 0) {
+        updateActiveSlide(currentBg - 1);
+        startAutoSlide();
+    } else if (currentBg == 0) {
+        updateActiveSlide(4);
+    }
 });

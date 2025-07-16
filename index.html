@@ -8,32 +8,43 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script src='https://kit.fontawesome.com/eedac787f9.js' crossorigin='anonymous'></script>
 </head>
 
 <body>
 
-    <a id="toTop"><i class="fa-solid fa-angle-up"></i></a>
+    <a id="toTop"><i class="fa-solid fa-arrow-up"></i></a>
     <a id="toCall" href="tel:+971504217267"><i class="fa-solid fa-phone"></i></a>
     <a id="toWhatsapp" href="https://wa.me/+971504217267" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
     <nav id="nav"></nav>
 
-    <section class="mainSec">
-        <div class="mainInner">
-            <h2>Welcome To</h3>
-                <h1>Inkjet Global</h1>
-                <h2>Your Global Printing Partner</h2>
+     <section class="carousel">
+        <div class="swiper-container" id="slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://placehold.co/1600x650?text=Dummy+Image+1+%281600+x+650+px%29" alt="Image 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://placehold.co/1600x650?text=Dummy+Image+2+%281600+x+650+px%29" alt="Image 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://placehold.co/1600x650?text=Dummy+Image+3+%281600+x+650+px%29" alt="Image 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://placehold.co/1600x650?text=Dummy+Image+4+%281600+x+650+px%29" alt="Image 4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://placehold.co/1600x650?text=Dummy+Image+5+%281600+x+650+px%29" alt="Image 5">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://placehold.co/1600x650?text=Dummy+Image+6+%281600+x+650+px%29" alt="Image 6">
+                </div>
+            </div>
+            <div class="carouselBtns carouselRight"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="carouselBtns carouselLeft"><i class="fa-solid fa-arrow-left"></i></div>
         </div>
     </section>
-
-    <!-- <svg class="divider1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100">
-        <g fill="var(--2)">
-            <rect fill="#000" width="100%" height="100%" />
-            <path d="M1000 100C500 100 500 64 0 64V0h1000v100Z" opacity=".5"></path>
-            <path d="M1000 100C500 100 500 34 0 34V0h1000v100Z" opacity=".5"></path>
-            <path d="M1000 100C500 100 500 4 0 4V0h1000v100Z"></path>
-        </g>
-    </svg> -->
 
     <section id="missionValues" class="section">
         <div class="container">
@@ -53,15 +64,6 @@
         </div>
     </section>
 
-    <!-- <svg class="divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100">
-        <g fill="var(--2)">
-            <rect fill="var(--1)" width="100%" height="100%" />
-            <path d="M1000 100C500 100 500 64 0 64V0h1000v100Z" opacity=".5"></path>
-            <path d="M1000 100C500 100 500 34 0 34V0h1000v100Z" opacity=".5"></path>
-            <path d="M1000 100C500 100 500 4 0 4V0h1000v100Z"></path>
-        </g>
-    </svg> -->
-
     <section id="services" class="section">
         <div class="container">
             <h2 class="sectionTitle">Our Services</h2>
@@ -75,7 +77,7 @@
                 </div>
 
                 <div class="serviceCard">
-                    <i class="fas fa-tools serviceIcon green"></i>
+                    <i class="fas fa-tools serviceIcon"></i>
                     <h3>Installation & Setup</h3>
                     <p>Our experts ensure seamless installation and configuration of printing machines at your site.</p>
                 </div>
@@ -87,7 +89,7 @@
                 </div>
 
                 <div class="serviceCard">
-                    <i class="fas fa-cogs serviceIcon green"></i>
+                    <i class="fas fa-cogs serviceIcon"></i>
                     <h3>Machine Repair & Maintenance</h3>
                     <p>Expert technicians available for on-demand servicing and preventive maintenance.</p>
                 </div>
@@ -95,15 +97,6 @@
             </div>
         </div>
     </section>
-
-    <!-- <svg class="divider1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100">
-        <g fill="var(--2)">
-            <rect fill="var(--1)" width="100%" height="100%" />
-            <path d="M1000 100C500 100 500 64 0 64V0h1000v100Z" opacity=".5"></path>
-            <path d="M1000 100C500 100 500 34 0 34V0h1000v100Z" opacity=".5"></path>
-            <path d="M1000 100C500 100 500 4 0 4V0h1000v100Z"></path>
-        </g>
-    </svg> -->
 
     <section id="products" class="section">
         <div class="container">
@@ -118,7 +111,7 @@
 
                 <div class="product-card">
                     <div class="productCardInner"><img src="Images/Products/1.8m-sublimation-printer1-1.jpg" alt="Sublimation Printer"></div>
-                    <h3 class="green">Sublimation Printers</h3>
+                    <h3>Sublimation Printers</h3>
                 </div>
 
                 <div class="product-card">
@@ -128,22 +121,13 @@
 
                 <div class="product-card">
                     <div class="productCardInner"><img src="Images/Products/acrylic-cutting-machine.webp" alt="Laser Cutting & Engraving"></div>
-                    <h3 class="green">Laser Cutting & Engraving</h3>
+                    <h3>Laser Cutting & Engraving</h3>
                 </div>
             </div>
             
             <a href="/products.html" class="viewAll">See All Products</a>
         </div>
     </section>
-
-    <!-- <svg class="divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100">
-        <g fill="var(--2)">
-            <rect fill="#000" width="100%" height="100%" />
-            <path d="M1000 100C500 100 500 64 0 64V0h1000v100Z" opacity=".5"></path>
-            <path d="M1000 100C500 100 500 34 0 34V0h1000v100Z" opacity=".5"></path>
-            <path d="M1000 100C500 100 500 4 0 4V0h1000v100Z"></path>
-        </g>
-    </svg> -->
 
     <section id="inquiry"> 
         <div class="inquiryInner">
@@ -184,19 +168,11 @@
         </div>
     </section>
 
-    <!-- <svg class="divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100">
-        <g fill="var(--2)">
-            <rect fill="var(--5)" width="100%" height="100%" />
-            <path d="M1000 100C500 100 500 64 0 64V0h1000v100Z" opacity=".5"></path>
-            <path d="M1000 100C500 100 500 34 0 34V0h1000v100Z" opacity=".5"></path>
-            <path d="M1000 100C500 100 500 4 0 4V0h1000v100Z"></path>
-        </g>
-    </svg> -->
-
     <footer>
         <p>&copy; <b>2025 Inkjet Gobal LLC.</b> | Made By <a target="_blank" href="https://mabeerkhan.com"><b>Abeer Khan</b></a></p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 

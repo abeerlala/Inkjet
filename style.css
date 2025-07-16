@@ -19,11 +19,12 @@
 }
 
 :root {
-    --1: #0249d89e;
+    --1: #2ac5f4;
     --2: #f0f0f0;
-    --3: #dedede;
+    --3: #000;
     --4: #ffffff;
     --5: #000000;
+    --6: #dedede;
 }
 
 body {
@@ -180,7 +181,7 @@ img.logo {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--3);
+    background-color: var(--6);
     min-width: 160px;
     z-index: 1000;
     font-size: 1.1rem;
@@ -227,7 +228,6 @@ a.callUs {
 
 a.callUs:hover {
     background-color: var(--3);
-    color: var(--5);
 }
 
 label[for="menu"] {
@@ -260,58 +260,57 @@ footer a {
     color: var(--5);
 }
 
-/* Divider Svg */
-
-.divider {
-    display: block;
-    margin: 0;
-    padding: 0;
-    line-height: 0;
-}
-
-.divider1 {
-    display: block;
-    transform: rotate(180deg);
-    margin: 0;
-    padding: 0;
-    line-height: 0;
-}
-
 /* Home Page Styling */
 
-/* Main Sec */
+/* Carousel Section Styling */
 
-.mainSec {
-    width: 100%;
-    height: 70vh;
-    background-image: url(Images/The-Benefits-of-Having-a-Wide-Format-Printer-In-Office.avif);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--4);
-}
-
-.mainInner {
-    background-color: transparent;
-    backdrop-filter: blur(3px);
-    height: 100%;
+.carousel {
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 
-.mainInner h1 {
-    font-size: clamp(2.7rem, 4vw, 4rem);
-    margin-bottom: 10px;
-    color: var(--3);
+.swiper-container {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    border-radius: 2px;
+    background-color: var(--4);
 }
 
-.mainInner h2 {
-    font-size: clamp(1.2rem, 2vw, 2rem);
-    font-weight: normal;
+.swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.swiper-container .carouselBtns,
+.swiper-container .carouselBtns {
+    width: 35px;
+    height: 35px;
+    background-color: var(--5);
+    border-radius: 2px;
+    color: var(--4);
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: 50%;
+    z-index: 900;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.swiper-container .carouselLeft {
+    left: 10px;
+}
+
+.swiper-container .carouselRight {
+    right: 10px;
 }
 
 /* Mission & Vision Section */
@@ -328,7 +327,7 @@ footer a {
 
 .sectionTitle {
     font-size: 2rem;
-    color: var(--6);
+    color: var(--5);
     margin-bottom: 20px;
     text-align: center;
     font-weight: bold;
@@ -387,7 +386,6 @@ footer a {
 
 .serviceCard:hover {
     transform: translateY(-5px);
-    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
 }
 
 .serviceIcon {
@@ -459,17 +457,12 @@ footer a {
 
 .product-card h3 {
     width: 100%;
-    background-color: var(--1);
+    background-color: var(--6);
     height: 50px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--4);
-}
-
-.product-card h3.green {
-    background-color: var(--3);
     color: var(--5);
 }
 
@@ -487,7 +480,7 @@ a.viewAll {
 
 a.viewAll:hover {
     background-color: var(--3);
-    color: var(--5);
+    color: var(--4);
 }
 
 /* Inquiry Section */
@@ -534,18 +527,19 @@ a.viewAll:hover {
 input, select, form button {
     height: 40px;
     background-color: transparent;
-    border: 3px solid var(--3);
+    border: 3px solid var(--6);
     padding: 0 5px;
-    color: var(--4);
     outline: none;
 }
 
 input:focus {
-    background-color: var(--3);
+    background-color: var(--6);
     color: var(--5);
+    border: 3px solid var(--1);
 }
 
-input:focus::placeholder {
+input:focus::placeholder,
+textarea:focus::placeholder {
     color: #333;
 }
 
@@ -554,8 +548,12 @@ textarea::placeholder {
     color: var(--2);
 }
 
+select {
+    color: var(--4);
+}
+
 select option {
-    background-color: var(--3);
+    background-color: var(--6);
     color: var(--5);
 }
 
@@ -566,18 +564,26 @@ textarea {
     color: var(--4);
     padding: 5px;
     outline: none;
-    border: 3px solid var(--3);
+    border: 3px solid var(--6);
     resize: vertical;
+}
+
+textarea:focus {
+    border: 3px solid var(--1);
+    background-color: var(--6);
+    color: var(--5);
 }
 
 form button {
     height: 45px;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: background-color .3s ease, color .3s ease;
+    transition: background-color .3s ease, color .3s ease, border .3 ease;
+    color: var(--4);
 }
 
 form button:hover {
-    background-color: var(--3);
+    background-color: var(--6);
     color: var(--5);
+    border: 3px solid var(--1);
 }
