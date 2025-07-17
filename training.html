@@ -12,9 +12,33 @@
 
 <body>
 
-    <a id="toTop"><i class="fa-solid fa-angle-up"></i></a>
+    <a id="toTop"><i class="fa-solid fa-arrow-up"></i></a>
+    <a id="toCall" href="tel:+971504217267"><i class="fa-solid fa-phone"></i></a>
     <a id="toWhatsapp" href="https://wa.me/+971504217267" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-    <nav id="nav"></nav>
+    <nav id="nav">
+        <a href="index.html"><img class="logo" src="Images/Logos/inkjetGlobal.webp" alt="Inkjet Global Logo"></a>
+
+        <label for="menu"><i class="fa-solid fa-bars label"></i></label>
+        <input type="checkbox" name="menu" id="menu">
+
+        <ul class="navList">
+            <li><a href="index.html" class="navLink ">Home</a></li>
+            <li><a href="products.html" class="navLink">Products</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="services.html">Services</a></button>
+                    <div class="dropdown-content">
+                        <a href="techSupport.html">Technical Support</a>
+                        <a href="training.html">Training</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="application.html" class="navLink">Application</a></li>
+            <li><a href="contact.html" class="navLink">Contact Us</a></li>
+        </ul>
+
+        <a class="callUs" href="tel:+971504217267"> <i class="fa-solid fa-phone"></i> +971504217267</a>
+    </nav>
 
 
     <script src="script.js"></script>

@@ -17,9 +17,32 @@
     <a id="toTop"><i class="fa-solid fa-arrow-up"></i></a>
     <a id="toCall" href="tel:+971504217267"><i class="fa-solid fa-phone"></i></a>
     <a id="toWhatsapp" href="https://wa.me/+971504217267" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-    <nav id="nav"></nav>
+    <nav id="nav">
+        <a href="index.html"><img class="logo" src="Images/Logos/inkjetGlobal.webp" alt="Inkjet Global Logo"></a>
 
-     <section class="carousel">
+        <label for="menu"><i class="fa-solid fa-bars label"></i></label>
+        <input type="checkbox" name="menu" id="menu">
+
+        <ul class="navList">
+            <li><a href="index.html" class="navLink ">Home</a></li>
+            <li><a href="products.html" class="navLink">Products</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="services.html">Services</a></button>
+                    <div class="dropdown-content">
+                        <a href="techSupport.html">Technical Support</a>
+                        <a href="training.html">Training</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="application.html" class="navLink">Application</a></li>
+            <li><a href="contact.html" class="navLink">Contact Us</a></li>
+        </ul>
+
+        <a class="callUs" href="tel:+971504217267"> <i class="fa-solid fa-phone"></i> +971504217267</a>
+    </nav>
+
+    <section class="carousel">
         <div class="swiper-container" id="slide">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -105,31 +128,34 @@
 
             <div class="products-grid">
                 <div class="product-card">
-                    <div class="productCardInner"><img src="Images/Products/dtf-printer-1.jpg" alt="DTF Printer"></div>
+                    <div class="productCardInner"><img src="Images/Products/dtf-printer-1.avif" alt="DTF Printer"></div>
                     <h3>DTF Printers</h3>
                 </div>
 
                 <div class="product-card">
-                    <div class="productCardInner"><img src="Images/Products/1.8m-sublimation-printer1-1.jpg" alt="Sublimation Printer"></div>
+                    <div class="productCardInner"><img src="Images/Products/1.8m-sublimation-printer1-1.avif"
+                            alt="Sublimation Printer"></div>
                     <h3>Sublimation Printers</h3>
                 </div>
 
                 <div class="product-card">
-                    <div class="productCardInner"><img src="Images/Products/images.jpg" alt="Heat Transfer Machine"></div>
+                    <div class="productCardInner"><img src="Images/Products/images.avif" alt="Heat Transfer Machine">
+                    </div>
                     <h3>Heat Transfer Machines</h3>
                 </div>
 
                 <div class="product-card">
-                    <div class="productCardInner"><img src="Images/Products/acrylic-cutting-machine.webp" alt="Laser Cutting & Engraving"></div>
+                    <div class="productCardInner"><img src="Images/Products/acrylic-cutting-machine.avif"
+                            alt="Laser Cutting & Engraving"></div>
                     <h3>Laser Cutting & Engraving</h3>
                 </div>
             </div>
-            
+
             <a href="/products.html" class="viewAll">See All Products</a>
         </div>
     </section>
 
-    <section id="inquiry"> 
+    <section id="inquiry">
         <div class="inquiryInner">
             <h2 class="sectionTitle">Get A Quote</h2>
 
@@ -152,14 +178,19 @@
                     <option value="1800B ECO Solvent Printer">1800B ECO Solvent Printer</option>
                     <option value="1800 Sublimation Printer">1800 Sublimation Printer</option>
                     <option value="20W/30W Fiber Laser Marking Machine">20W/30W Fiber Laser Marking Machine</option>
-                    <option value="80W CO2 Laser Cutting & Engraving Machine">80W CO2 Laser Cutting & Engraving Machine</option>
+                    <option value="80W CO2 Laser Cutting & Engraving Machine">80W CO2 Laser Cutting & Engraving Machine
+                    </option>
                     <option value="1400 Cutting Plotter">1400 Cutting Plotter</option>
-                    <option value="Semi Automatic Double Station Pneumatic Heat Transfer Machine">Semi Automatic Double Station Pneumatic Heat Transfer Machine</option>
+                    <option value="Semi Automatic Double Station Pneumatic Heat Transfer Machine">Semi Automatic Double
+                        Station Pneumatic Heat Transfer Machine</option>
                     <option value="Flat Heat Press Machine">Flat Heat Press Machine</option>
-                    <option value="Dual Station Hat Cap Heat Press Machine">Dual Station Hat Cap Heat Press Machine</option>
+                    <option value="Dual Station Hat Cap Heat Press Machine">Dual Station Hat Cap Heat Press Machine
+                    </option>
                     <option value="5 Head Mug & Heat Press Machine">5 Head Mug & Heat Press Machine</option>
-                    <option value="Oil Heating Roll To Roll Roller Heat Press Machine">Oil Heating Roll To Roll Roller Heat Press Machine</option>
-                    <option value="Multifunctional Oil Roller Heat Sublimation Transfer Machine">Multifunctional Oil Roller Heat Sublimation Transfer Machine</option>
+                    <option value="Oil Heating Roll To Roll Roller Heat Press Machine">Oil Heating Roll To Roll Roller
+                        Heat Press Machine</option>
+                    <option value="Multifunctional Oil Roller Heat Sublimation Transfer Machine">Multifunctional Oil
+                        Roller Heat Sublimation Transfer Machine</option>
                 </select>
                 <label for="message">Message *</label>
                 <textarea name="message" id="message" placeholder="Your Message..." required></textarea>
@@ -169,7 +200,8 @@
     </section>
 
     <footer>
-        <p>&copy; <b>2025 Inkjet Gobal LLC.</b> | Made By <a target="_blank" href="https://mabeerkhan.com"><b>Abeer Khan</b></a></p>
+        <p>&copy; <b>2025 Inkjet Gobal LLC.</b> | Made By <a target="_blank" href="https://mabeerkhan.com"><b>Abeer
+                    Khan</b></a></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
