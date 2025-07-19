@@ -1,0 +1,85 @@
+@media (max-width: 690px) {
+    label[for="menu"] {
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+    }
+
+    img.logo {
+        height: 60px;
+    }
+
+    .catalogue {
+        display: none;
+    }
+
+    .navList {
+        flex-direction: column;
+        top: 70px;
+        position: absolute;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--1);
+        right: 0;
+        height: calc(100vh - 70px);
+        display: none;
+    }
+
+    .dropdownSpecial {
+        display: block;
+    }
+
+    .prodHidden {
+        display: none;
+    }
+
+    .navLink {
+        color: var(--4);
+    }
+
+    .dropbtn a {
+        color: var(--4);
+    }
+
+    .dropbtn a:hover,
+    .activeA a,
+    .navLink:hover,
+    .activeNavLink,
+    .dropdownSpecial .activeATwo {
+        border-bottom: 4px solid var(--5);
+    }
+
+    .dropdownSpecial .dropbtnSpecial {
+        color: var(--4);
+    }
+
+    .dropdown-contentSpecial {
+        right: 10px;
+    }
+
+    .dropdown-contentSpecial a {
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 530px) {
+    #inquiry form {
+        width: 290px;
+    }
+}
+
+@media (max-width: 375px) {
+    .navList {
+        width: 100%;
+    }
+}
