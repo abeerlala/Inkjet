@@ -123,11 +123,16 @@ img.logo {
     margin-top: 5px;
 }
 
-.logoLink {
-    color: var(--5);
-    text-decoration: none;
-    font-size: .9rem;
+.logoDiv {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
     font-family: 'Raleway';
+}
+
+.logoDiv p{
+    transform: translateY(-6px);
+    font-size: .9rem;
 }
 
 .navList {
