@@ -312,7 +312,7 @@ input[type="search"] {
     display: flex;
     justify-content: center;
     align-items: center;
-}   
+}
 
 .icons {
     display: flex;
@@ -708,4 +708,107 @@ form button:hover {
     color: var(--4);
     text-align: center;
     padding: 0 10px;
+}
+
+/* Products Pages */
+
+/* UV Page */
+
+.product-container {
+    margin: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.productCard {
+    background-color: var(--4);
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.getAQuote {
+    color: var(--4);
+    text-decoration: none;
+    background-color: var(--1);
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.getAQuote:hover {
+    background-color: var(--5);
+}
+
+.imageProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.imgInner1,
+.imgInner2 {
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* background-color: var(--4); */
+    transition: scale .4s ease;
+    cursor: pointer;
+}
+
+.product-image:hover {
+    scale: 1.2;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+table td {
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--6);
+    vertical-align: top;
+}
+
+table td:first-child {
+    font-weight: bold;
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .productCard {
+        max-width: 100%;
+    }
 }

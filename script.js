@@ -36,5 +36,24 @@ if (pageName == "" || pageName == "index.html") {
 }
 
 function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("myDropdown").classList.toggle("show");
 }
+
+// Product Cards Logic
+
+const images = document.querySelectorAll(".imageProduct img");
+
+images.forEach(img => {
+    img.addEventListener("click", () => {
+        const src = img.src;
+        window.open(src)
+    });
+});
+
+const productCard = document.querySelectorAll(".productCard");
+
+productCard.forEach(card => {
+    const img = card.querySelector("img");
+    const a = card.querySelector("a");
+    a.href = `${a.href}Hello, I’m interested in the ${img.alt}. Can you please share the price? Kindly send me the price and availability of the ${img.alt}`;
+});
