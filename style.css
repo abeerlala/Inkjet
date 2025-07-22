@@ -131,8 +131,9 @@ img.logo {
 }
 
 .logoDiv p{
-    transform: translateY(-6px);
+    transform: translateY(-20px) translateX(-7px);
     font-size: .9rem;
+    font-family: 'Raleway'
 }
 
 .navList {

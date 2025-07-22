@@ -34,6 +34,10 @@
         height: 70px;
     }
 
+    .logoDiv p {
+        transform: translateY(-10px) translateX(-5px);
+    }
+
     img.logo {
         height: 60px;
         margin-left: 20px;
