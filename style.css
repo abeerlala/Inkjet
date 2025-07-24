@@ -348,6 +348,7 @@ input[type="search"] {
     background-color: var(--1);
     padding: 7px 12px;
     transition: background-color .3s ease, color .3s ease;
+    margin-right: -15px;
 }
 
 .icons a:hover {
